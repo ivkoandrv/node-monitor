@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@types/*": ["../../packages/types/*"]
+    },
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "lib": ["DOM", "ESNext"]
+  },
+  "include": ["src/**/*.ts", "../../packages/types/**/*.ts"],
+  "typeRoots": ["../../packages/types", "./node_modules/@types"],
+  "exclude": ["node_modules"]
+}
