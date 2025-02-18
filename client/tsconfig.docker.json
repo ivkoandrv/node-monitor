@@ -1,0 +1,25 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
+    }
+  ],
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*/src/"],
+      "@typings/*": ["./typings/*"]
+    },
+    "lib": ["DOM", "ESNext"]
+  },
+  "include": ["./src/**/*.ts", "./typings/**/*.ts"],
+  "typeRoots": ["./typings", "node_modules/@types"]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "node-monitor",
+  "version": "0.0.1",
+  "description": "NodeJS Concurrency Monitor App",
+  "main": "index.js",
+  "repository": "git@github.com:ivkoandrv/node-monitor.git",
+  "author": "Ivan Andreiev <ivan.andreiev@intellias.com>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "workspaces": [
+    "api",
+    "client",
+    "packages"
+  ],
+  "lint-staged": {
+    "*.ts": "eslint --fix",
+    "*.js": "eslint --fix",
+    "*.vue": "eslint --fix",
+    "*.{js,ts,vue, css, scss}": "prettier --write"
+  },
+  "private": true
+}
